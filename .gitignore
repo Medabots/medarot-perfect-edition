@@ -1,0 +1,7 @@
+*.ws
+*.sav
+/build/
+__pycache__/
+
+# StoicGoose generated files
+imgui.ini
