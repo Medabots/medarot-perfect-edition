@@ -1,5 +1,6 @@
 *.ws
 *.sav
+*.map
 /build/
 __pycache__/
 

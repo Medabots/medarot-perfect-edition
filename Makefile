@@ -68,7 +68,7 @@ $(VERSIONS): %: $(PREFIX_OUTPUT)%.$(EXT_GAME)
 
 
 .SECONDEXPANSION:
-$(DIR_BASE)/$(PREFIX_OUTPUT)%.$(EXT_GAME): $(OBJECTS) | $(DIR_BASE)/$(PREFIX_BASE)%.$(EXT_GAME)
+$(DIR_BASE)/$(PREFIX_OUTPUT)%.$(EXT_GAME): $(OBJECTS) $(DIR_SOURCE)/main.%.nasm | $(DIR_BASE)/$(PREFIX_BASE)%.$(EXT_GAME)
 	$(LD) $(LD_ARGS) -f bin -o $@ $(DIR_SOURCE)/main.$*.nasm
 	cmp -l $| $@
 

@@ -1,3 +1,4 @@
+[map all main.kabuto.map]
 ; A complete listing of data in the ROM, used as a way to 'link' the final output
 
 ; FIXME: Figure out how to use the metadata labels to auto-generate the math in this line
